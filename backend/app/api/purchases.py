@@ -3,8 +3,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc, func
 from app.database import get_db
 from app.models.purchases import Purchase
+from app.models.sales_history import SalesHistory
 from pydantic import BaseModel
 from typing import Optional
+from datetime import datetime, timezone
 import json
 
 router = APIRouter(prefix="/purchases", tags=["purchases"])
@@ -32,7 +34,8 @@ class PurchaseCreate(BaseModel):
 
 @router.post("/")
 async def create_purchase(purchase: PurchaseCreate, db: AsyncSession = Depends(get_db)):
-    """Record a purchase"""
+    """Record a purchase and add to sales history"""
+    # 1. Create purchase record
     db_purchase = Purchase(
         listing_title=purchase.listing_title,
         listing_price=purchase.listing_price,
@@ -54,6 +57,21 @@ async def create_purchase(purchase: PurchaseCreate, db: AsyncSession = Depends(g
     )
     
     db.add(db_purchase)
+    
+    # 2. Always add to sales_history (fields can be null)
+    db_sale = SalesHistory(
+        player_id=purchase.player_id,
+        brand_id=purchase.brand_id,
+        variation_id=purchase.variation_id,
+        year=purchase.year,
+        grade=purchase.grade,
+        grader=purchase.grader,
+        price=purchase.listing_price,
+        sold_at=datetime.now(timezone.utc)
+    )
+    db.add(db_sale)
+    
+    # 3. Commit both inserts
     await db.commit()
     await db.refresh(db_purchase)
     

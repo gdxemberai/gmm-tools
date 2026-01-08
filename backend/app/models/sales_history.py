@@ -41,9 +41,9 @@ class SalesHistory(Base):
     id: int = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     
     # Card identification fields (slugified for consistency)
-    player_id: str = Column(String, nullable=False, index=True)
-    brand_id: str = Column(String, nullable=False)
-    variation_id: str = Column(String, nullable=False)
+    player_id: str = Column(String, nullable=True, index=True)
+    brand_id: str = Column(String, nullable=True)
+    variation_id: str = Column(String, nullable=True)
     
     # Card details
     year: int = Column(Integer, nullable=False)
