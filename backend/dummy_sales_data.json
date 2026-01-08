@@ -1,0 +1,4932 @@
+[
+  {
+    "player_name": "Victor Wembanyama",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2023-11-01T10:30:00Z"
+  },
+  {
+    "player_name": "Victor Wembanyama",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 47.5,
+    "sold_at": "2023-11-02T14:15:00Z"
+  },
+  {
+    "player_name": "Victor Wembanyama",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 435.0,
+    "sold_at": "2023-11-03T09:45:00Z"
+  },
+  {
+    "player_name": "Victor Wembanyama",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2023-11-04T16:20:00Z"
+  },
+  {
+    "player_name": "LeBron James",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 2800.0,
+    "sold_at": "2023-11-05T11:00:00Z"
+  },
+  {
+    "player_name": "LeBron James",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 1200.0,
+    "sold_at": "2023-11-06T13:30:00Z"
+  },
+  {
+    "player_name": "Stephen Curry",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1850.0,
+    "sold_at": "2023-11-07T15:45:00Z"
+  },
+  {
+    "player_name": "Stephen Curry",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 980.0,
+    "sold_at": "2023-11-08T10:10:00Z"
+  },
+  {
+    "player_name": "Michael Jordan",
+    "year": 1986,
+    "brand": "Fleer",
+    "variation": "Base",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 7100.0,
+    "sold_at": "2023-11-09T12:00:00Z"
+  },
+  {
+    "player_name": "Michael Jordan",
+    "year": 1986,
+    "brand": "Fleer",
+    "variation": "Base",
+    "grade": 7,
+    "grader": "PSA",
+    "price": 3200.0,
+    "sold_at": "2023-11-10T14:30:00Z"
+  },
+  {
+    "player_name": "Paolo Banchero",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2023-11-11T09:15:00Z"
+  },
+  {
+    "player_name": "Paolo Banchero",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2023-11-12T16:45:00Z"
+  },
+  {
+    "player_name": "Chet Holmgren",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2023-11-13T11:20:00Z"
+  },
+  {
+    "player_name": "Chet Holmgren",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2023-11-14T13:50:00Z"
+  },
+  {
+    "player_name": "Kobe Bryant",
+    "year": 1996,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 4500.0,
+    "sold_at": "2023-11-15T10:00:00Z"
+  },
+  {
+    "player_name": "Kobe Bryant",
+    "year": 1996,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 1800.0,
+    "sold_at": "2023-11-16T15:30:00Z"
+  },
+  {
+    "player_name": "Patrick Mahomes",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 650.0,
+    "sold_at": "2023-11-17T12:15:00Z"
+  },
+  {
+    "player_name": "Patrick Mahomes",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 3200.0,
+    "sold_at": "2023-11-18T14:00:00Z"
+  },
+  {
+    "player_name": "Tom Brady",
+    "year": 2000,
+    "brand": "Playoff Contenders",
+    "variation": "Autograph",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 15000.0,
+    "sold_at": "2023-11-19T11:45:00Z"
+  },
+  {
+    "player_name": "Tom Brady",
+    "year": 2000,
+    "brand": "Playoff Contenders",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 2200.0,
+    "sold_at": "2023-11-20T16:20:00Z"
+  },
+  {
+    "player_name": "Giannis Antetokounmpo",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2023-11-21T10:30:00Z"
+  },
+  {
+    "player_name": "Giannis Antetokounmpo",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 380.0,
+    "sold_at": "2023-11-22T13:45:00Z"
+  },
+  {
+    "player_name": "Luka Doncic",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 280.0,
+    "sold_at": "2023-11-23T09:00:00Z"
+  },
+  {
+    "player_name": "Luka Doncic",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1450.0,
+    "sold_at": "2023-11-24T15:15:00Z"
+  },
+  {
+    "player_name": "Ja Morant",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2023-11-25T11:30:00Z"
+  },
+  {
+    "player_name": "Ja Morant",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 520.0,
+    "sold_at": "2023-11-26T14:45:00Z"
+  },
+  {
+    "player_name": "Zion Williamson",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 110.0,
+    "sold_at": "2023-11-27T10:00:00Z"
+  },
+  {
+    "player_name": "Zion Williamson",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 650.0,
+    "sold_at": "2023-11-28T16:30:00Z"
+  },
+  {
+    "player_name": "CJ Stroud",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 55.0,
+    "sold_at": "2023-11-29T12:20:00Z"
+  },
+  {
+    "player_name": "CJ Stroud",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2023-11-30T15:00:00Z"
+  },
+  {
+    "player_name": "Bijan Robinson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2023-12-01T09:30:00Z"
+  },
+  {
+    "player_name": "Bijan Robinson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2023-12-02T13:15:00Z"
+  },
+  {
+    "player_name": "Anthony Richardson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2023-12-03T11:45:00Z"
+  },
+  {
+    "player_name": "Anthony Richardson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2023-12-04T14:30:00Z"
+  },
+  {
+    "player_name": "Shohei Ohtani",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2023-12-05T10:15:00Z"
+  },
+  {
+    "player_name": "Shohei Ohtani",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 2400.0,
+    "sold_at": "2023-12-06T16:00:00Z"
+  },
+  {
+    "player_name": "Mike Trout",
+    "year": 2011,
+    "brand": "Topps Update",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 3200.0,
+    "sold_at": "2023-12-07T12:30:00Z"
+  },
+  {
+    "player_name": "Mike Trout",
+    "year": 2011,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 1800.0,
+    "sold_at": "2023-12-08T15:45:00Z"
+  },
+  {
+    "player_name": "Ronald Acuna Jr",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2023-12-09T09:20:00Z"
+  },
+  {
+    "player_name": "Ronald Acuna Jr",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 780.0,
+    "sold_at": "2023-12-10T13:00:00Z"
+  },
+  {
+    "player_name": "Wander Franco",
+    "year": 2021,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2023-12-11T11:10:00Z"
+  },
+  {
+    "player_name": "Wander Franco",
+    "year": 2021,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2023-12-12T14:50:00Z"
+  },
+  {
+    "player_name": "Derek Jeter",
+    "year": 1993,
+    "brand": "Upper Deck",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2023-12-13T10:40:00Z"
+  },
+  {
+    "player_name": "Derek Jeter",
+    "year": 1993,
+    "brand": "Upper Deck",
+    "variation": "Base",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2023-12-14T15:20:00Z"
+  },
+  {
+    "player_name": "Ken Griffey Jr",
+    "year": 1989,
+    "brand": "Upper Deck",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1200.0,
+    "sold_at": "2023-12-15T12:00:00Z"
+  },
+  {
+    "player_name": "Ken Griffey Jr",
+    "year": 1989,
+    "brand": "Upper Deck",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 380.0,
+    "sold_at": "2023-12-16T16:35:00Z"
+  },
+  {
+    "player_name": "Tyrese Haliburton",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2023-12-17T09:50:00Z"
+  },
+  {
+    "player_name": "Tyrese Haliburton",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 295.0,
+    "sold_at": "2023-12-18T13:25:00Z"
+  },
+  {
+    "player_name": "Devin Booker",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 180.0,
+    "sold_at": "2023-12-19T11:15:00Z"
+  },
+  {
+    "player_name": "Devin Booker",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 210.0,
+    "sold_at": "2023-12-20T14:40:00Z"
+  },
+  {
+    "player_name": "Jayson Tatum",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2023-12-21T10:25:00Z"
+  },
+  {
+    "player_name": "Jayson Tatum",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2023-12-22T15:55:00Z"
+  },
+  {
+    "player_name": "Trae Young",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2023-12-23T12:10:00Z"
+  },
+  {
+    "player_name": "Trae Young",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2023-12-24T16:20:00Z"
+  },
+  {
+    "player_name": "Saquon Barkley",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2023-12-25T09:40:00Z"
+  },
+  {
+    "player_name": "Saquon Barkley",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 480.0,
+    "sold_at": "2023-12-26T13:15:00Z"
+  },
+  {
+    "player_name": "Justin Jefferson",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 175.0,
+    "sold_at": "2023-12-27T11:30:00Z"
+  },
+  {
+    "player_name": "Justin Jefferson",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 920.0,
+    "sold_at": "2023-12-28T14:50:00Z"
+  },
+  {
+    "player_name": "Joe Burrow",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2023-12-29T10:05:00Z"
+  },
+  {
+    "player_name": "Joe Burrow",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 725.0,
+    "sold_at": "2023-12-30T15:35:00Z"
+  },
+  {
+    "player_name": "Bryce Young",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-01-01T12:20:00Z"
+  },
+  {
+    "player_name": "Bryce Young",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-01-02T16:10:00Z"
+  },
+  {
+    "player_name": "Magic Johnson",
+    "year": 1980,
+    "brand": "Topps",
+    "variation": "Base",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 2200.0,
+    "sold_at": "2024-01-03T09:45:00Z"
+  },
+  {
+    "player_name": "Magic Johnson",
+    "year": 1980,
+    "brand": "Topps",
+    "variation": "Base",
+    "grade": 7,
+    "grader": "PSA",
+    "price": 980.0,
+    "sold_at": "2024-01-04T13:30:00Z"
+  },
+  {
+    "player_name": "Larry Bird",
+    "year": 1980,
+    "brand": "Topps",
+    "variation": "Base",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 1850.0,
+    "sold_at": "2024-01-05T11:00:00Z"
+  },
+  {
+    "player_name": "Larry Bird",
+    "year": 1980,
+    "brand": "Topps",
+    "variation": "Base",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 3500.0,
+    "sold_at": "2024-01-06T14:45:00Z"
+  },
+  {
+    "player_name": "Wayne Gretzky",
+    "year": 1979,
+    "brand": "OPC",
+    "variation": "Base",
+    "grade": 8,
+    "grader": "PSA",
+    "price": 8500.0,
+    "sold_at": "2024-01-07T10:20:00Z"
+  },
+  {
+    "player_name": "Wayne Gretzky",
+    "year": 1979,
+    "brand": "OPC",
+    "variation": "Base",
+    "grade": 7,
+    "grader": "PSA",
+    "price": 4200.0,
+    "sold_at": "2024-01-08T15:50:00Z"
+  },
+  {
+    "player_name": "Connor McDavid",
+    "year": 2015,
+    "brand": "Upper Deck",
+    "variation": "Young Guns",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1850.0,
+    "sold_at": "2024-01-09T12:35:00Z"
+  },
+  {
+    "player_name": "Connor McDavid",
+    "year": 2015,
+    "brand": "Upper Deck",
+    "variation": "Young Guns",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 650.0,
+    "sold_at": "2024-01-10T16:15:00Z"
+  },
+  {
+    "player_name": "Sidney Crosby",
+    "year": 2005,
+    "brand": "Upper Deck",
+    "variation": "Young Guns",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 2400.0,
+    "sold_at": "2024-01-11T09:30:00Z"
+  },
+  {
+    "player_name": "Sidney Crosby",
+    "year": 2005,
+    "brand": "Upper Deck",
+    "variation": "Young Guns",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2024-01-12T13:00:00Z"
+  },
+  {
+    "player_name": "Scottie Barnes",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-01-13T11:20:00Z"
+  },
+  {
+    "player_name": "Scottie Barnes",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-01-14T14:55:00Z"
+  },
+  {
+    "player_name": "Cade Cunningham",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-01-15T10:10:00Z"
+  },
+  {
+    "player_name": "Cade Cunningham",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 110.0,
+    "sold_at": "2024-01-16T15:40:00Z"
+  },
+  {
+    "player_name": "Jalen Green",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2024-01-17T12:25:00Z"
+  },
+  {
+    "player_name": "Jalen Green",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 215.0,
+    "sold_at": "2024-01-18T16:05:00Z"
+  },
+  {
+    "player_name": "Evan Mobley",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 50.0,
+    "sold_at": "2024-01-19T09:15:00Z"
+  },
+  {
+    "player_name": "Evan Mobley",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 235.0,
+    "sold_at": "2024-01-20T13:50:00Z"
+  },
+  {
+    "player_name": "Lamelo Ball",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-01-21T11:35:00Z"
+  },
+  {
+    "player_name": "Lamelo Ball",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 580.0,
+    "sold_at": "2024-01-22T15:20:00Z"
+  },
+  {
+    "player_name": "Anthony Edwards",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-01-23T10:45:00Z"
+  },
+  {
+    "player_name": "Anthony Edwards",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 620.0,
+    "sold_at": "2024-01-24T14:30:00Z"
+  },
+  {
+    "player_name": "Aaron Judge",
+    "year": 2017,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-01-25T12:00:00Z"
+  },
+  {
+    "player_name": "Aaron Judge",
+    "year": 2017,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1150.0,
+    "sold_at": "2024-01-26T16:45:00Z"
+  },
+  {
+    "player_name": "Vladimir Guerrero Jr",
+    "year": 2019,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-01-27T09:20:00Z"
+  },
+  {
+    "player_name": "Vladimir Guerrero Jr",
+    "year": 2019,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 495.0,
+    "sold_at": "2024-01-28T13:55:00Z"
+  },
+  {
+    "player_name": "Fernando Tatis Jr",
+    "year": 2019,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-01-29T11:10:00Z"
+  },
+  {
+    "player_name": "Fernando Tatis Jr",
+    "year": 2019,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2024-01-30T14:35:00Z"
+  },
+  {
+    "player_name": "Juan Soto",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 295.0,
+    "sold_at": "2024-01-31T10:50:00Z"
+  },
+  {
+    "player_name": "Juan Soto",
+    "year": 2018,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 720.0,
+    "sold_at": "2024-02-01T15:25:00Z"
+  },
+  {
+    "player_name": "Julio Rodriguez",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-02-02T12:40:00Z"
+  },
+  {
+    "player_name": "Julio Rodriguez",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-02-03T16:00:00Z"
+  },
+  {
+    "player_name": "Bobby Witt Jr",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-02-04T09:35:00Z"
+  },
+  {
+    "player_name": "Bobby Witt Jr",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-02-05T13:20:00Z"
+  },
+  {
+    "player_name": "Jarred Kelenic",
+    "year": 2021,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-02-06T11:05:00Z"
+  },
+  {
+    "player_name": "Jarred Kelenic",
+    "year": 2021,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-02-07T14:50:00Z"
+  },
+  {
+    "player_name": "Spencer Torkelson",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-02-08T10:15:00Z"
+  },
+  {
+    "player_name": "Spencer Torkelson",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2024-02-09T15:40:00Z"
+  },
+  {
+    "player_name": "Adley Rutschman",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-02-10T12:25:00Z"
+  },
+  {
+    "player_name": "Adley Rutschman",
+    "year": 2022,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-02-11T16:10:00Z"
+  },
+  {
+    "player_name": "Jackson Holliday",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-02-12T09:30:00Z"
+  },
+  {
+    "player_name": "Jackson Holliday",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-02-13T13:15:00Z"
+  },
+  {
+    "player_name": "Gunnar Henderson",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-02-14T11:45:00Z"
+  },
+  {
+    "player_name": "Gunnar Henderson",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-02-15T15:20:00Z"
+  },
+  {
+    "player_name": "Corbin Carroll",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2024-02-16T10:35:00Z"
+  },
+  {
+    "player_name": "Corbin Carroll",
+    "year": 2023,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 265.0,
+    "sold_at": "2024-02-17T14:00:00Z"
+  },
+  {
+    "player_name": "Josh Allen",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-02-18T12:20:00Z"
+  },
+  {
+    "player_name": "Josh Allen",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 820.0,
+    "sold_at": "2024-02-19T16:45:00Z"
+  },
+  {
+    "player_name": "Lamar Jackson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 220.0,
+    "sold_at": "2024-02-20T09:50:00Z"
+  },
+  {
+    "player_name": "Lamar Jackson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 520.0,
+    "sold_at": "2024-02-21T13:30:00Z"
+  },
+  {
+    "player_name": "Justin Herbert",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-02-22T11:10:00Z"
+  },
+  {
+    "player_name": "Justin Herbert",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 550.0,
+    "sold_at": "2024-02-23T14:55:00Z"
+  },
+  {
+    "player_name": "Trevor Lawrence",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-02-24T10:25:00Z"
+  },
+  {
+    "player_name": "Trevor Lawrence",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-02-25T15:10:00Z"
+  },
+  {
+    "player_name": "Breece Hall",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-02-26T12:40:00Z"
+  },
+  {
+    "player_name": "Breece Hall",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-02-27T16:25:00Z"
+  },
+  {
+    "player_name": "Garrett Wilson",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-02-28T09:15:00Z"
+  },
+  {
+    "player_name": "Garrett Wilson",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-02-29T13:50:00Z"
+  },
+  {
+    "player_name": "Jaxon Smith-Njigba",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-03-01T11:30:00Z"
+  },
+  {
+    "player_name": "Jaxon Smith-Njigba",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-03-02T15:15:00Z"
+  },
+  {
+    "player_name": "Brock Purdy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-03-03T10:45:00Z"
+  },
+  {
+    "player_name": "Brock Purdy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-03-04T14:20:00Z"
+  },
+  {
+    "player_name": "Puka Nacua",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-03-05T12:05:00Z"
+  },
+  {
+    "player_name": "Puka Nacua",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-03-06T16:35:00Z"
+  },
+  {
+    "player_name": "Amon-Ra St Brown",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2024-03-07T09:25:00Z"
+  },
+  {
+    "player_name": "Amon-Ra St Brown",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2024-03-08T13:00:00Z"
+  },
+  {
+    "player_name": "Jaylen Waddle",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2024-03-09T11:40:00Z"
+  },
+  {
+    "player_name": "Jaylen Waddle",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-03-10T15:25:00Z"
+  },
+  {
+    "player_name": "Ja'Marr Chase",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-03-11T10:10:00Z"
+  },
+  {
+    "player_name": "Ja'Marr Chase",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 620.0,
+    "sold_at": "2024-03-12T14:45:00Z"
+  },
+  {
+    "player_name": "Micah Parsons",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-03-13T12:30:00Z"
+  },
+  {
+    "player_name": "Micah Parsons",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 395.0,
+    "sold_at": "2024-03-14T16:15:00Z"
+  },
+  {
+    "player_name": "Jalen Hurts",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-03-15T09:35:00Z"
+  },
+  {
+    "player_name": "Jalen Hurts",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 750.0,
+    "sold_at": "2024-03-16T13:20:00Z"
+  },
+  {
+    "player_name": "Tua Tagovailoa",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-03-17T11:05:00Z"
+  },
+  {
+    "player_name": "Tua Tagovailoa",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-03-18T14:50:00Z"
+  },
+  {
+    "player_name": "Will Anderson Jr",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2024-03-19T10:20:00Z"
+  },
+  {
+    "player_name": "Will Anderson Jr",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2024-03-20T15:05:00Z"
+  },
+  {
+    "player_name": "Tyreek Hill",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-03-21T12:45:00Z"
+  },
+  {
+    "player_name": "Tyreek Hill",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-03-22T16:30:00Z"
+  },
+  {
+    "player_name": "Cooper Kupp",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-03-23T09:00:00Z"
+  },
+  {
+    "player_name": "Cooper Kupp",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-03-24T13:40:00Z"
+  },
+  {
+    "player_name": "Davante Adams",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-03-25T11:25:00Z"
+  },
+  {
+    "player_name": "Davante Adams",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 265.0,
+    "sold_at": "2024-03-26T15:10:00Z"
+  },
+  {
+    "player_name": "Stefon Diggs",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-03-27T10:50:00Z"
+  },
+  {
+    "player_name": "Stefon Diggs",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-03-28T14:35:00Z"
+  },
+  {
+    "player_name": "DeAndre Hopkins",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-03-29T12:15:00Z"
+  },
+  {
+    "player_name": "DeAndre Hopkins",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-03-30T16:00:00Z"
+  },
+  {
+    "player_name": "Nikola Jokic",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2024-03-31T09:45:00Z"
+  },
+  {
+    "player_name": "Nikola Jokic",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 3200.0,
+    "sold_at": "2024-04-01T13:30:00Z"
+  },
+  {
+    "player_name": "Joel Embiid",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-04-02T11:10:00Z"
+  },
+  {
+    "player_name": "Joel Embiid",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-04-03T14:55:00Z"
+  },
+  {
+    "player_name": "Damian Lillard",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2024-04-04T10:25:00Z"
+  },
+  {
+    "player_name": "Damian Lillard",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1250.0,
+    "sold_at": "2024-04-05T15:10:00Z"
+  },
+  {
+    "player_name": "Jimmy Butler",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-04-06T12:40:00Z"
+  },
+  {
+    "player_name": "Jimmy Butler",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-04-07T16:25:00Z"
+  },
+  {
+    "player_name": "Kawhi Leonard",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-04-08T09:15:00Z"
+  },
+  {
+    "player_name": "Kawhi Leonard",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1650.0,
+    "sold_at": "2024-04-09T13:50:00Z"
+  },
+  {
+    "player_name": "Paul George",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-04-10T11:30:00Z"
+  },
+  {
+    "player_name": "Paul George",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-04-11T15:15:00Z"
+  },
+  {
+    "player_name": "Bradley Beal",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-04-12T10:45:00Z"
+  },
+  {
+    "player_name": "Bradley Beal",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-04-13T14:20:00Z"
+  },
+  {
+    "player_name": "Donovan Mitchell",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-04-14T12:05:00Z"
+  },
+  {
+    "player_name": "Donovan Mitchell",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 585.0,
+    "sold_at": "2024-04-15T16:35:00Z"
+  },
+  {
+    "player_name": "Shai Gilgeous-Alexander",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-04-16T09:25:00Z"
+  },
+  {
+    "player_name": "Shai Gilgeous-Alexander",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 920.0,
+    "sold_at": "2024-04-17T13:00:00Z"
+  },
+  {
+    "player_name": "De'Aaron Fox",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-04-18T11:40:00Z"
+  },
+  {
+    "player_name": "De'Aaron Fox",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2024-04-19T15:25:00Z"
+  },
+  {
+    "player_name": "Bam Adebayo",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-04-20T10:10:00Z"
+  },
+  {
+    "player_name": "Bam Adebayo",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2024-04-21T14:45:00Z"
+  },
+  {
+    "player_name": "Karl-Anthony Towns",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-04-22T12:30:00Z"
+  },
+  {
+    "player_name": "Karl-Anthony Towns",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-04-23T16:15:00Z"
+  },
+  {
+    "player_name": "Darius Garland",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2024-04-24T09:35:00Z"
+  },
+  {
+    "player_name": "Darius Garland",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2024-04-25T13:20:00Z"
+  },
+  {
+    "player_name": "Tyler Herro",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-04-26T11:05:00Z"
+  },
+  {
+    "player_name": "Tyler Herro",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-04-27T14:50:00Z"
+  },
+  {
+    "player_name": "Domantas Sabonis",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-04-28T10:20:00Z"
+  },
+  {
+    "player_name": "Domantas Sabonis",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 295.0,
+    "sold_at": "2024-04-29T15:05:00Z"
+  },
+  {
+    "player_name": "Jrue Holiday",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-04-30T12:45:00Z"
+  },
+  {
+    "player_name": "Jrue Holiday",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2024-05-01T16:30:00Z"
+  },
+  {
+    "player_name": "Khris Middleton",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2024-05-02T09:00:00Z"
+  },
+  {
+    "player_name": "Khris Middleton",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2024-05-03T13:40:00Z"
+  },
+  {
+    "player_name": "Fred VanVleet",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-05-04T11:25:00Z"
+  },
+  {
+    "player_name": "Fred VanVleet",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-05-05T15:10:00Z"
+  },
+  {
+    "player_name": "Pascal Siakam",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-05-06T10:50:00Z"
+  },
+  {
+    "player_name": "Pascal Siakam",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2024-05-07T14:35:00Z"
+  },
+  {
+    "player_name": "Dejounte Murray",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 62.0,
+    "sold_at": "2024-05-08T12:15:00Z"
+  },
+  {
+    "player_name": "Dejounte Murray",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-05-09T16:00:00Z"
+  },
+  {
+    "player_name": "Mikal Bridges",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 55.0,
+    "sold_at": "2024-05-10T09:45:00Z"
+  },
+  {
+    "player_name": "Mikal Bridges",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-05-11T13:30:00Z"
+  },
+  {
+    "player_name": "Jaren Jackson Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-05-12T11:10:00Z"
+  },
+  {
+    "player_name": "Jaren Jackson Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-05-13T14:55:00Z"
+  },
+  {
+    "player_name": "Jalen Williams",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-05-14T10:25:00Z"
+  },
+  {
+    "player_name": "Jalen Williams",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-05-15T15:10:00Z"
+  },
+  {
+    "player_name": "Keegan Murray",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-05-16T12:40:00Z"
+  },
+  {
+    "player_name": "Keegan Murray",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-05-17T16:25:00Z"
+  },
+  {
+    "player_name": "Bennedict Mathurin",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-05-18T09:15:00Z"
+  },
+  {
+    "player_name": "Bennedict Mathurin",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-05-19T13:50:00Z"
+  },
+  {
+    "player_name": "Shaedon Sharpe",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-05-20T11:30:00Z"
+  },
+  {
+    "player_name": "Shaedon Sharpe",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-05-21T15:15:00Z"
+  },
+  {
+    "player_name": "AJ Griffin",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-05-22T10:45:00Z"
+  },
+  {
+    "player_name": "AJ Griffin",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-05-23T14:20:00Z"
+  },
+  {
+    "player_name": "Jeremy Sochan",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2024-05-24T12:05:00Z"
+  },
+  {
+    "player_name": "Jeremy Sochan",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-05-25T16:35:00Z"
+  },
+  {
+    "player_name": "Walker Kessler",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-05-26T09:25:00Z"
+  },
+  {
+    "player_name": "Walker Kessler",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-05-27T13:00:00Z"
+  },
+  {
+    "player_name": "Brandon Miller",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-05-28T11:40:00Z"
+  },
+  {
+    "player_name": "Brandon Miller",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 215.0,
+    "sold_at": "2024-05-29T15:25:00Z"
+  },
+  {
+    "player_name": "Scoot Henderson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-05-30T10:10:00Z"
+  },
+  {
+    "player_name": "Scoot Henderson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-05-31T14:45:00Z"
+  },
+  {
+    "player_name": "Amen Thompson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-06-01T12:30:00Z"
+  },
+  {
+    "player_name": "Amen Thompson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-06-02T16:15:00Z"
+  },
+  {
+    "player_name": "Ausar Thompson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-06-03T09:35:00Z"
+  },
+  {
+    "player_name": "Ausar Thompson",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-06-04T13:20:00Z"
+  },
+  {
+    "player_name": "Jaime Jaquez Jr",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-06-05T11:05:00Z"
+  },
+  {
+    "player_name": "Jaime Jaquez Jr",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 175.0,
+    "sold_at": "2024-06-06T14:50:00Z"
+  },
+  {
+    "player_name": "Gradey Dick",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-06-07T10:20:00Z"
+  },
+  {
+    "player_name": "Gradey Dick",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2024-06-08T15:05:00Z"
+  },
+  {
+    "player_name": "Cason Wallace",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2024-06-09T12:45:00Z"
+  },
+  {
+    "player_name": "Cason Wallace",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-06-10T16:30:00Z"
+  },
+  {
+    "player_name": "Cam Whitmore",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-06-11T09:00:00Z"
+  },
+  {
+    "player_name": "Cam Whitmore",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-06-12T13:40:00Z"
+  },
+  {
+    "player_name": "Dereck Lively II",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-06-13T11:25:00Z"
+  },
+  {
+    "player_name": "Dereck Lively II",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-06-14T15:10:00Z"
+  },
+  {
+    "player_name": "Bilal Coulibaly",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-06-15T10:50:00Z"
+  },
+  {
+    "player_name": "Bilal Coulibaly",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-06-16T14:35:00Z"
+  },
+  {
+    "player_name": "Chet Holmgren",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2024-06-17T12:15:00Z"
+  },
+  {
+    "player_name": "Chet Holmgren",
+    "year": 2023,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 295.0,
+    "sold_at": "2024-06-18T16:00:00Z"
+  },
+  {
+    "player_name": "Russell Westbrook",
+    "year": 2008,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 450.0,
+    "sold_at": "2024-06-19T09:45:00Z"
+  },
+  {
+    "player_name": "Russell Westbrook",
+    "year": 2008,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2024-06-20T13:30:00Z"
+  },
+  {
+    "player_name": "James Harden",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 620.0,
+    "sold_at": "2024-06-21T11:10:00Z"
+  },
+  {
+    "player_name": "James Harden",
+    "year": 2009,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1850.0,
+    "sold_at": "2024-06-22T14:55:00Z"
+  },
+  {
+    "player_name": "Kyrie Irving",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 520.0,
+    "sold_at": "2024-06-23T10:25:00Z"
+  },
+  {
+    "player_name": "Kyrie Irving",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-06-24T15:10:00Z"
+  },
+  {
+    "player_name": "Chris Paul",
+    "year": 2005,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-06-25T12:40:00Z"
+  },
+  {
+    "player_name": "Chris Paul",
+    "year": 2005,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-06-26T16:25:00Z"
+  },
+  {
+    "player_name": "Carmelo Anthony",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-06-27T09:15:00Z"
+  },
+  {
+    "player_name": "Carmelo Anthony",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-06-28T13:50:00Z"
+  },
+  {
+    "player_name": "Dwyane Wade",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 850.0,
+    "sold_at": "2024-06-29T11:30:00Z"
+  },
+  {
+    "player_name": "Dwyane Wade",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 2850.0,
+    "sold_at": "2024-06-30T15:15:00Z"
+  },
+  {
+    "player_name": "Chris Bosh",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-07-01T10:45:00Z"
+  },
+  {
+    "player_name": "Chris Bosh",
+    "year": 2003,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-07-02T14:20:00Z"
+  },
+  {
+    "player_name": "Derrick Rose",
+    "year": 2008,
+    "brand": "Topps Chrome",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-07-03T12:05:00Z"
+  },
+  {
+    "player_name": "Derrick Rose",
+    "year": 2008,
+    "brand": "Topps Chrome",
+    "variation": "Refractor",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1350.0,
+    "sold_at": "2024-07-04T16:35:00Z"
+  },
+  {
+    "player_name": "Blake Griffin",
+    "year": 2009,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-07-05T09:25:00Z"
+  },
+  {
+    "player_name": "Blake Griffin",
+    "year": 2009,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-07-06T13:00:00Z"
+  },
+  {
+    "player_name": "John Wall",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-07-07T11:40:00Z"
+  },
+  {
+    "player_name": "John Wall",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-07-08T15:25:00Z"
+  },
+  {
+    "player_name": "DeMarcus Cousins",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-07-09T10:10:00Z"
+  },
+  {
+    "player_name": "DeMarcus Cousins",
+    "year": 2010,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-07-10T14:45:00Z"
+  },
+  {
+    "player_name": "Klay Thompson",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-07-11T12:30:00Z"
+  },
+  {
+    "player_name": "Klay Thompson",
+    "year": 2011,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1250.0,
+    "sold_at": "2024-07-12T16:15:00Z"
+  },
+  {
+    "player_name": "Draymond Green",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-07-13T09:35:00Z"
+  },
+  {
+    "player_name": "Draymond Green",
+    "year": 2012,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-07-14T13:20:00Z"
+  },
+  {
+    "player_name": "CJ McCollum",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-07-15T11:05:00Z"
+  },
+  {
+    "player_name": "CJ McCollum",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 285.0,
+    "sold_at": "2024-07-16T14:50:00Z"
+  },
+  {
+    "player_name": "Victor Oladipo",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-07-17T10:20:00Z"
+  },
+  {
+    "player_name": "Victor Oladipo",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-07-18T15:05:00Z"
+  },
+  {
+    "player_name": "Otto Porter Jr",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-07-19T12:45:00Z"
+  },
+  {
+    "player_name": "Otto Porter Jr",
+    "year": 2013,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-07-20T16:30:00Z"
+  },
+  {
+    "player_name": "Andrew Wiggins",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-07-21T09:00:00Z"
+  },
+  {
+    "player_name": "Andrew Wiggins",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-07-22T13:40:00Z"
+  },
+  {
+    "player_name": "Jabari Parker",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-07-23T11:25:00Z"
+  },
+  {
+    "player_name": "Jabari Parker",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-07-24T15:10:00Z"
+  },
+  {
+    "player_name": "Julius Randle",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-07-25T10:50:00Z"
+  },
+  {
+    "player_name": "Julius Randle",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-07-26T14:35:00Z"
+  },
+  {
+    "player_name": "Zach LaVine",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-07-27T12:15:00Z"
+  },
+  {
+    "player_name": "Zach LaVine",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-07-28T16:00:00Z"
+  },
+  {
+    "player_name": "Marcus Smart",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2024-07-29T09:45:00Z"
+  },
+  {
+    "player_name": "Marcus Smart",
+    "year": 2014,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-07-30T13:30:00Z"
+  },
+  {
+    "player_name": "D'Angelo Russell",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-07-31T11:10:00Z"
+  },
+  {
+    "player_name": "D'Angelo Russell",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-08-01T14:55:00Z"
+  },
+  {
+    "player_name": "Kristaps Porzingis",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-08-02T10:25:00Z"
+  },
+  {
+    "player_name": "Kristaps Porzingis",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-08-03T15:10:00Z"
+  },
+  {
+    "player_name": "Myles Turner",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 62.0,
+    "sold_at": "2024-08-04T12:40:00Z"
+  },
+  {
+    "player_name": "Myles Turner",
+    "year": 2015,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2024-08-05T16:25:00Z"
+  },
+  {
+    "player_name": "Devin Vassell",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-08-06T09:15:00Z"
+  },
+  {
+    "player_name": "Devin Vassell",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-08-07T13:50:00Z"
+  },
+  {
+    "player_name": "Cole Anthony",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-08-08T11:30:00Z"
+  },
+  {
+    "player_name": "Cole Anthony",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-08-09T15:15:00Z"
+  },
+  {
+    "player_name": "Isaac Okoro",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-08-10T10:45:00Z"
+  },
+  {
+    "player_name": "Isaac Okoro",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-08-11T14:20:00Z"
+  },
+  {
+    "player_name": "Obi Toppin",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-08-12T12:05:00Z"
+  },
+  {
+    "player_name": "Obi Toppin",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-08-13T16:35:00Z"
+  },
+  {
+    "player_name": "Deni Avdija",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-08-14T09:25:00Z"
+  },
+  {
+    "player_name": "Deni Avdija",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-08-15T13:00:00Z"
+  },
+  {
+    "player_name": "Precious Achiuwa",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2024-08-16T11:40:00Z"
+  },
+  {
+    "player_name": "Precious Achiuwa",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-08-17T15:25:00Z"
+  },
+  {
+    "player_name": "Tyrese Maxey",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-08-18T10:10:00Z"
+  },
+  {
+    "player_name": "Tyrese Maxey",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 550.0,
+    "sold_at": "2024-08-19T14:45:00Z"
+  },
+  {
+    "player_name": "Desmond Bane",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-08-20T12:30:00Z"
+  },
+  {
+    "player_name": "Desmond Bane",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-08-21T16:15:00Z"
+  },
+  {
+    "player_name": "Saddiq Bey",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-08-22T09:35:00Z"
+  },
+  {
+    "player_name": "Saddiq Bey",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-08-23T13:20:00Z"
+  },
+  {
+    "player_name": "Immanuel Quickley",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-08-24T11:05:00Z"
+  },
+  {
+    "player_name": "Immanuel Quickley",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-08-25T14:50:00Z"
+  },
+  {
+    "player_name": "Patrick Williams",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-08-26T10:20:00Z"
+  },
+  {
+    "player_name": "Patrick Williams",
+    "year": 2020,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-08-27T15:05:00Z"
+  },
+  {
+    "player_name": "Jalen Suggs",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-08-28T12:45:00Z"
+  },
+  {
+    "player_name": "Jalen Suggs",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-08-29T16:30:00Z"
+  },
+  {
+    "player_name": "Franz Wagner",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 55.0,
+    "sold_at": "2024-08-30T09:00:00Z"
+  },
+  {
+    "player_name": "Franz Wagner",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 265.0,
+    "sold_at": "2024-08-31T13:40:00Z"
+  },
+  {
+    "player_name": "Josh Giddey",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-09-01T11:25:00Z"
+  },
+  {
+    "player_name": "Josh Giddey",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-09-02T15:10:00Z"
+  },
+  {
+    "player_name": "Davion Mitchell",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-09-03T10:50:00Z"
+  },
+  {
+    "player_name": "Davion Mitchell",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-09-04T14:35:00Z"
+  },
+  {
+    "player_name": "Jonathan Kuminga",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2024-09-05T12:15:00Z"
+  },
+  {
+    "player_name": "Jonathan Kuminga",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-09-06T16:00:00Z"
+  },
+  {
+    "player_name": "Moses Moody",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-09-07T09:45:00Z"
+  },
+  {
+    "player_name": "Moses Moody",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 175.0,
+    "sold_at": "2024-09-08T13:30:00Z"
+  },
+  {
+    "player_name": "Alperen Sengun",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-09-09T11:10:00Z"
+  },
+  {
+    "player_name": "Alperen Sengun",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-09-10T14:55:00Z"
+  },
+  {
+    "player_name": "Herb Jones",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-09-11T10:25:00Z"
+  },
+  {
+    "player_name": "Herb Jones",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2024-09-12T15:10:00Z"
+  },
+  {
+    "player_name": "Tre Mann",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-09-13T12:40:00Z"
+  },
+  {
+    "player_name": "Tre Mann",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-09-14T16:25:00Z"
+  },
+  {
+    "player_name": "Ziaire Williams",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-09-15T09:15:00Z"
+  },
+  {
+    "player_name": "Ziaire Williams",
+    "year": 2021,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-09-16T13:50:00Z"
+  },
+  {
+    "player_name": "Jaden Hardy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-09-17T11:30:00Z"
+  },
+  {
+    "player_name": "Jaden Hardy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-09-18T15:15:00Z"
+  },
+  {
+    "player_name": "Mark Williams",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-09-19T10:45:00Z"
+  },
+  {
+    "player_name": "Mark Williams",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-09-20T14:20:00Z"
+  },
+  {
+    "player_name": "Tari Eason",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-09-21T12:05:00Z"
+  },
+  {
+    "player_name": "Tari Eason",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2024-09-22T16:35:00Z"
+  },
+  {
+    "player_name": "Malaki Branham",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2024-09-23T09:25:00Z"
+  },
+  {
+    "player_name": "Malaki Branham",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-09-24T13:00:00Z"
+  },
+  {
+    "player_name": "Christian Braun",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-09-25T11:40:00Z"
+  },
+  {
+    "player_name": "Christian Braun",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 78.0,
+    "sold_at": "2024-09-26T15:25:00Z"
+  },
+  {
+    "player_name": "Jake LaRavia",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2024-09-27T10:10:00Z"
+  },
+  {
+    "player_name": "Jake LaRavia",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-09-28T14:45:00Z"
+  },
+  {
+    "player_name": "David Roddy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 20.0,
+    "sold_at": "2024-09-29T12:30:00Z"
+  },
+  {
+    "player_name": "David Roddy",
+    "year": 2022,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 65.0,
+    "sold_at": "2024-09-30T16:15:00Z"
+  },
+  {
+    "player_name": "Caleb Martin",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-10-01T09:35:00Z"
+  },
+  {
+    "player_name": "Caleb Martin",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-10-02T13:20:00Z"
+  },
+  {
+    "player_name": "Luguentz Dort",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-10-03T11:05:00Z"
+  },
+  {
+    "player_name": "Luguentz Dort",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-10-04T14:50:00Z"
+  },
+  {
+    "player_name": "Matisse Thybulle",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-10-05T10:20:00Z"
+  },
+  {
+    "player_name": "Matisse Thybulle",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-10-06T15:05:00Z"
+  },
+  {
+    "player_name": "Nickeil Alexander-Walker",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-10-07T12:45:00Z"
+  },
+  {
+    "player_name": "Nickeil Alexander-Walker",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-10-08T16:30:00Z"
+  },
+  {
+    "player_name": "Rui Hachimura",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2024-10-09T09:00:00Z"
+  },
+  {
+    "player_name": "Rui Hachimura",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 215.0,
+    "sold_at": "2024-10-10T13:40:00Z"
+  },
+  {
+    "player_name": "Cameron Johnson",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-10-11T11:25:00Z"
+  },
+  {
+    "player_name": "Cameron Johnson",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-10-12T15:10:00Z"
+  },
+  {
+    "player_name": "Coby White",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-10-13T10:50:00Z"
+  },
+  {
+    "player_name": "Coby White",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 175.0,
+    "sold_at": "2024-10-14T14:35:00Z"
+  },
+  {
+    "player_name": "PJ Washington",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-10-15T12:15:00Z"
+  },
+  {
+    "player_name": "PJ Washington",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-10-16T16:00:00Z"
+  },
+  {
+    "player_name": "Kevin Porter Jr",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-10-17T09:45:00Z"
+  },
+  {
+    "player_name": "Kevin Porter Jr",
+    "year": 2019,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-10-18T13:30:00Z"
+  },
+  {
+    "player_name": "Kyle Kuzma",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-10-19T11:10:00Z"
+  },
+  {
+    "player_name": "Kyle Kuzma",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2024-10-20T14:55:00Z"
+  },
+  {
+    "player_name": "John Collins",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2024-10-21T10:25:00Z"
+  },
+  {
+    "player_name": "John Collins",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-10-22T15:10:00Z"
+  },
+  {
+    "player_name": "Jarrett Allen",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 65.0,
+    "sold_at": "2024-10-23T12:40:00Z"
+  },
+  {
+    "player_name": "Jarrett Allen",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2024-10-24T16:25:00Z"
+  },
+  {
+    "player_name": "OG Anunoby",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2024-10-25T09:15:00Z"
+  },
+  {
+    "player_name": "OG Anunoby",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2024-10-26T13:50:00Z"
+  },
+  {
+    "player_name": "Dennis Smith Jr",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-10-27T11:30:00Z"
+  },
+  {
+    "player_name": "Dennis Smith Jr",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 85.0,
+    "sold_at": "2024-10-28T15:15:00Z"
+  },
+  {
+    "player_name": "Josh Jackson",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-10-29T10:45:00Z"
+  },
+  {
+    "player_name": "Josh Jackson",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-10-30T14:20:00Z"
+  },
+  {
+    "player_name": "Lauri Markkanen",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-10-31T12:05:00Z"
+  },
+  {
+    "player_name": "Lauri Markkanen",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 385.0,
+    "sold_at": "2024-11-01T16:35:00Z"
+  },
+  {
+    "player_name": "Malik Monk",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-11-02T09:25:00Z"
+  },
+  {
+    "player_name": "Malik Monk",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-11-03T13:00:00Z"
+  },
+  {
+    "player_name": "Collin Sexton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 45.0,
+    "sold_at": "2024-11-04T11:40:00Z"
+  },
+  {
+    "player_name": "Collin Sexton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 215.0,
+    "sold_at": "2024-11-05T15:25:00Z"
+  },
+  {
+    "player_name": "Marvin Bagley III",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-11-06T10:10:00Z"
+  },
+  {
+    "player_name": "Marvin Bagley III",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-11-07T14:45:00Z"
+  },
+  {
+    "player_name": "Wendell Carter Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-11-08T12:30:00Z"
+  },
+  {
+    "player_name": "Wendell Carter Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-11-09T16:15:00Z"
+  },
+  {
+    "player_name": "Michael Porter Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-11-10T09:35:00Z"
+  },
+  {
+    "player_name": "Michael Porter Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2024-11-11T13:20:00Z"
+  },
+  {
+    "player_name": "Kevin Huerter",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2024-11-12T11:05:00Z"
+  },
+  {
+    "player_name": "Kevin Huerter",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2024-11-13T14:50:00Z"
+  },
+  {
+    "player_name": "Shai Gilgeous-Alexander",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Red Ice",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 2850.0,
+    "sold_at": "2024-11-14T10:20:00Z"
+  },
+  {
+    "player_name": "Luka Doncic",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Red Ice",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 3200.0,
+    "sold_at": "2024-11-15T15:05:00Z"
+  },
+  {
+    "player_name": "Trae Young",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Red Ice",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 1850.0,
+    "sold_at": "2024-11-16T12:45:00Z"
+  },
+  {
+    "player_name": "Deandre Ayton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-11-17T16:30:00Z"
+  },
+  {
+    "player_name": "Deandre Ayton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2024-11-18T09:00:00Z"
+  },
+  {
+    "player_name": "Lonnie Walker IV",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-11-19T13:40:00Z"
+  },
+  {
+    "player_name": "Lonnie Walker IV",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-11-20T11:25:00Z"
+  },
+  {
+    "player_name": "Jerome Robinson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2024-11-21T15:10:00Z"
+  },
+  {
+    "player_name": "Jerome Robinson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-11-22T10:50:00Z"
+  },
+  {
+    "player_name": "Zhaire Smith",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2024-11-23T14:35:00Z"
+  },
+  {
+    "player_name": "Zhaire Smith",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-11-24T12:15:00Z"
+  },
+  {
+    "player_name": "Miles Bridges",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-11-25T16:00:00Z"
+  },
+  {
+    "player_name": "Miles Bridges",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2024-11-26T09:45:00Z"
+  },
+  {
+    "player_name": "Troy Brown Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-11-27T13:30:00Z"
+  },
+  {
+    "player_name": "Troy Brown Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2024-11-28T11:10:00Z"
+  },
+  {
+    "player_name": "Donte DiVincenzo",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 55.0,
+    "sold_at": "2024-11-29T14:55:00Z"
+  },
+  {
+    "player_name": "Donte DiVincenzo",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 265.0,
+    "sold_at": "2024-11-30T10:25:00Z"
+  },
+  {
+    "player_name": "Landry Shamet",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-12-01T15:10:00Z"
+  },
+  {
+    "player_name": "Landry Shamet",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-12-02T12:40:00Z"
+  },
+  {
+    "player_name": "Jalen Brunson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-12-03T16:25:00Z"
+  },
+  {
+    "player_name": "Jalen Brunson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 620.0,
+    "sold_at": "2024-12-04T09:15:00Z"
+  },
+  {
+    "player_name": "Svi Mykhailiuk",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2024-12-05T13:50:00Z"
+  },
+  {
+    "player_name": "Svi Mykhailiuk",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 78.0,
+    "sold_at": "2024-12-06T11:30:00Z"
+  },
+  {
+    "player_name": "Elie Okobo",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2024-12-07T15:15:00Z"
+  },
+  {
+    "player_name": "Elie Okobo",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-12-08T10:45:00Z"
+  },
+  {
+    "player_name": "Anfernee Simons",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2024-12-09T14:20:00Z"
+  },
+  {
+    "player_name": "Anfernee Simons",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2024-12-10T12:05:00Z"
+  },
+  {
+    "player_name": "Gary Trent Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-12-11T16:35:00Z"
+  },
+  {
+    "player_name": "Gary Trent Jr",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-12-12T09:25:00Z"
+  },
+  {
+    "player_name": "Robert Williams III",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-12-13T13:00:00Z"
+  },
+  {
+    "player_name": "Robert Williams III",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2024-12-14T11:40:00Z"
+  },
+  {
+    "player_name": "Mitchell Robinson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-12-15T15:25:00Z"
+  },
+  {
+    "player_name": "Mitchell Robinson",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2024-12-16T10:10:00Z"
+  },
+  {
+    "player_name": "Josh Okogie",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 30.0,
+    "sold_at": "2024-12-17T14:45:00Z"
+  },
+  {
+    "player_name": "Josh Okogie",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 145.0,
+    "sold_at": "2024-12-18T12:30:00Z"
+  },
+  {
+    "player_name": "Grayson Allen",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2024-12-19T16:15:00Z"
+  },
+  {
+    "player_name": "Grayson Allen",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2024-12-20T09:35:00Z"
+  },
+  {
+    "player_name": "De'Anthony Melton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-12-21T13:20:00Z"
+  },
+  {
+    "player_name": "De'Anthony Melton",
+    "year": 2018,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2024-12-22T11:05:00Z"
+  },
+  {
+    "player_name": "Lonzo Ball",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2024-12-23T14:50:00Z"
+  },
+  {
+    "player_name": "Lonzo Ball",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 585.0,
+    "sold_at": "2024-12-24T10:20:00Z"
+  },
+  {
+    "player_name": "Markelle Fultz",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2024-12-25T15:05:00Z"
+  },
+  {
+    "player_name": "Markelle Fultz",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2024-12-26T12:45:00Z"
+  },
+  {
+    "player_name": "Jonathan Isaac",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2024-12-27T16:30:00Z"
+  },
+  {
+    "player_name": "Jonathan Isaac",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2024-12-28T09:00:00Z"
+  },
+  {
+    "player_name": "Zach Collins",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 32.0,
+    "sold_at": "2024-12-29T13:40:00Z"
+  },
+  {
+    "player_name": "Zach Collins",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2024-12-30T11:25:00Z"
+  },
+  {
+    "player_name": "Luke Kennard",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2024-12-31T15:10:00Z"
+  },
+  {
+    "player_name": "Luke Kennard",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2025-01-01T10:50:00Z"
+  },
+  {
+    "player_name": "Frank Ntilikina",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2025-01-02T14:35:00Z"
+  },
+  {
+    "player_name": "Frank Ntilikina",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 78.0,
+    "sold_at": "2025-01-03T12:15:00Z"
+  },
+  {
+    "player_name": "Justin Jackson",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2025-01-04T16:00:00Z"
+  },
+  {
+    "player_name": "Justin Jackson",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2025-01-05T09:45:00Z"
+  },
+  {
+    "player_name": "Harry Giles",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2025-01-06T13:30:00Z"
+  },
+  {
+    "player_name": "Harry Giles",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2025-01-07T11:10:00Z"
+  },
+  {
+    "player_name": "TJ Leaf",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 20.0,
+    "sold_at": "2025-01-08T14:55:00Z"
+  },
+  {
+    "player_name": "TJ Leaf",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 105.0,
+    "sold_at": "2025-01-09T10:25:00Z"
+  },
+  {
+    "player_name": "Semi Ojeleye",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2025-01-10T15:10:00Z"
+  },
+  {
+    "player_name": "Semi Ojeleye",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 65.0,
+    "sold_at": "2025-01-11T12:40:00Z"
+  },
+  {
+    "player_name": "Derrick White",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2025-01-12T16:25:00Z"
+  },
+  {
+    "player_name": "Derrick White",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 350.0,
+    "sold_at": "2025-01-13T09:15:00Z"
+  },
+  {
+    "player_name": "Josh Hart",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 58.0,
+    "sold_at": "2025-01-14T13:50:00Z"
+  },
+  {
+    "player_name": "Josh Hart",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 155.0,
+    "sold_at": "2025-01-15T11:30:00Z"
+  },
+  {
+    "player_name": "Dillon Brooks",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2025-01-16T15:15:00Z"
+  },
+  {
+    "player_name": "Dillon Brooks",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2025-01-17T10:45:00Z"
+  },
+  {
+    "player_name": "Jordan Bell",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2025-01-18T14:20:00Z"
+  },
+  {
+    "player_name": "Jordan Bell",
+    "year": 2017,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 82.0,
+    "sold_at": "2025-01-19T12:05:00Z"
+  },
+  {
+    "player_name": "Jared Goff",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2025-01-20T16:35:00Z"
+  },
+  {
+    "player_name": "Jared Goff",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 485.0,
+    "sold_at": "2025-01-21T09:25:00Z"
+  },
+  {
+    "player_name": "Carson Wentz",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 75.0,
+    "sold_at": "2025-01-22T13:00:00Z"
+  },
+  {
+    "player_name": "Carson Wentz",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2025-01-23T11:40:00Z"
+  },
+  {
+    "player_name": "Dak Prescott",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2025-01-24T15:25:00Z"
+  },
+  {
+    "player_name": "Dak Prescott",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 920.0,
+    "sold_at": "2025-01-25T10:10:00Z"
+  },
+  {
+    "player_name": "Ezekiel Elliott",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2025-01-26T14:45:00Z"
+  },
+  {
+    "player_name": "Ezekiel Elliott",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 320.0,
+    "sold_at": "2025-01-27T12:30:00Z"
+  },
+  {
+    "player_name": "Joey Bosa",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 88.0,
+    "sold_at": "2025-01-28T16:15:00Z"
+  },
+  {
+    "player_name": "Joey Bosa",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 420.0,
+    "sold_at": "2025-01-29T09:35:00Z"
+  },
+  {
+    "player_name": "Jalen Ramsey",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2025-01-30T13:20:00Z"
+  },
+  {
+    "player_name": "Jalen Ramsey",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2025-01-31T11:05:00Z"
+  },
+  {
+    "player_name": "DeForest Buckner",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2025-02-01T14:50:00Z"
+  },
+  {
+    "player_name": "DeForest Buckner",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2025-02-02T10:20:00Z"
+  },
+  {
+    "player_name": "Ronnie Stanley",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2025-02-03T15:05:00Z"
+  },
+  {
+    "player_name": "Ronnie Stanley",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2025-02-04T12:45:00Z"
+  },
+  {
+    "player_name": "Laremy Tunsil",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2025-02-05T16:30:00Z"
+  },
+  {
+    "player_name": "Laremy Tunsil",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 195.0,
+    "sold_at": "2025-02-06T09:00:00Z"
+  },
+  {
+    "player_name": "Corey Coleman",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2025-02-07T13:40:00Z"
+  },
+  {
+    "player_name": "Corey Coleman",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 78.0,
+    "sold_at": "2025-02-08T11:25:00Z"
+  },
+  {
+    "player_name": "Will Fuller",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 38.0,
+    "sold_at": "2025-02-09T15:10:00Z"
+  },
+  {
+    "player_name": "Will Fuller",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 185.0,
+    "sold_at": "2025-02-10T10:50:00Z"
+  },
+  {
+    "player_name": "Josh Doctson",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2025-02-11T14:35:00Z"
+  },
+  {
+    "player_name": "Josh Doctson",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2025-02-12T12:15:00Z"
+  },
+  {
+    "player_name": "Laquon Treadwell",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2025-02-13T16:00:00Z"
+  },
+  {
+    "player_name": "Laquon Treadwell",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2025-02-14T09:45:00Z"
+  },
+  {
+    "player_name": "Michael Thomas",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2025-02-15T13:30:00Z"
+  },
+  {
+    "player_name": "Michael Thomas",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 550.0,
+    "sold_at": "2025-02-16T11:10:00Z"
+  },
+  {
+    "player_name": "Sterling Shepard",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 42.0,
+    "sold_at": "2025-02-17T14:55:00Z"
+  },
+  {
+    "player_name": "Sterling Shepard",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2025-02-18T10:25:00Z"
+  },
+  {
+    "player_name": "Tyler Boyd",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2025-02-19T15:10:00Z"
+  },
+  {
+    "player_name": "Tyler Boyd",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 225.0,
+    "sold_at": "2025-02-20T12:40:00Z"
+  },
+  {
+    "player_name": "Tajae Sharpe",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2025-02-21T16:25:00Z"
+  },
+  {
+    "player_name": "Tajae Sharpe",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 68.0,
+    "sold_at": "2025-02-22T09:15:00Z"
+  },
+  {
+    "player_name": "Hunter Henry",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 52.0,
+    "sold_at": "2025-02-23T13:50:00Z"
+  },
+  {
+    "player_name": "Hunter Henry",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 245.0,
+    "sold_at": "2025-02-24T11:30:00Z"
+  },
+  {
+    "player_name": "Derrick Henry",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 165.0,
+    "sold_at": "2025-02-25T15:15:00Z"
+  },
+  {
+    "player_name": "Derrick Henry",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 820.0,
+    "sold_at": "2025-02-26T10:45:00Z"
+  },
+  {
+    "player_name": "Kenyan Drake",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 35.0,
+    "sold_at": "2025-02-27T14:20:00Z"
+  },
+  {
+    "player_name": "Kenyan Drake",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 95.0,
+    "sold_at": "2025-02-28T12:05:00Z"
+  },
+  {
+    "player_name": "Paul Perkins",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 22.0,
+    "sold_at": "2025-03-01T16:35:00Z"
+  },
+  {
+    "player_name": "Paul Perkins",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 115.0,
+    "sold_at": "2025-03-02T09:25:00Z"
+  },
+  {
+    "player_name": "CJ Prosise",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 25.0,
+    "sold_at": "2025-03-03T13:00:00Z"
+  },
+  {
+    "player_name": "CJ Prosise",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 72.0,
+    "sold_at": "2025-03-04T11:40:00Z"
+  },
+  {
+    "player_name": "Devontae Booker",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 28.0,
+    "sold_at": "2025-03-05T15:25:00Z"
+  },
+  {
+    "player_name": "Devontae Booker",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 135.0,
+    "sold_at": "2025-03-06T10:10:00Z"
+  },
+  {
+    "player_name": "Jordan Howard",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Base",
+    "grade": 10,
+    "grader": "PSA",
+    "price": 48.0,
+    "sold_at": "2025-03-07T14:45:00Z"
+  },
+  {
+    "player_name": "Jordan Howard",
+    "year": 2016,
+    "brand": "Panini Prizm",
+    "variation": "Silver Prizm",
+    "grade": 9,
+    "grader": "PSA",
+    "price": 125.0,
+    "sold_at": "2025-03-08T12:30:00Z"
+  }
+]
