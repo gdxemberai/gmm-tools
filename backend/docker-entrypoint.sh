@@ -24,11 +24,11 @@ while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
     sleep 2
 done
 
-echo "Initializing database..."
-python -m app.init_db || echo "Database already initialized"
+echo "Resetting database (dropping all tables)..."
+python -m app.init_db --reset
 
-echo "Seeding database with sample data..."
-python seed_db.py || echo "Database already seeded or seeding failed"
+echo "Seeding database with fresh data..."
+python seed_db.py
 
 echo "Starting application..."
 exec "$@"

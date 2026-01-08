@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import health, analyze
+from app.api import health, analyze, bulk_analyze, database, cache, purchases
 from app.database import init_db, close_db
 from app.redis_client import init_redis, close_redis
 from app.services.openai_service import init_openai
@@ -89,6 +89,10 @@ app.add_middleware(
 # Include routers
 app.include_router(health.router)
 app.include_router(analyze.router)
+app.include_router(bulk_analyze.router)
+app.include_router(database.router)
+app.include_router(cache.router)
+app.include_router(purchases.router)
 
 
 @app.get("/")

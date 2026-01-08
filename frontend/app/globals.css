@@ -12,51 +12,163 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #171717;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Custom scrollbar styles */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Hide scrollbar for main content */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
+/* Background Grid Pattern */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #8080800a 1px, transparent 1px),
+                    linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+/* Sidebar Expansion Logic */
+#sidebar { 
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+#main-wrapper { 
+  transition: padding-left 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+body.has-expanded-sidebar #sidebar { 
+  width: 16rem; 
+}
+
+body.has-expanded-sidebar #main-wrapper { 
+  padding-left: 16rem; 
+}
+
+/* Sidebar Items */
+body.has-expanded-sidebar #sidebar .sidebar-item {
+  justify-content: flex-start !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+body.has-expanded-sidebar #sidebar .nav-label {
+  position: static !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  padding: 0 0 0 12px !important;
+  pointer-events: auto !important;
+  display: inline-block !important;
+  white-space: nowrap;
+}
+
+/* Sidebar Header */
+#collapse-trigger { 
+  display: none; 
+}
+
+#expand-trigger { 
+  display: flex; 
+  opacity: 0; 
+  pointer-events: auto; 
+}
+
+#logo-wrapper:hover #expand-trigger { 
+  opacity: 1; 
+  background-color: rgba(255,255,255,0.95); 
+}
+
+body.has-expanded-sidebar #sidebar-header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+
+body.has-expanded-sidebar #collapse-trigger { 
+  display: block; 
+}
+
+body.has-expanded-sidebar #expand-trigger { 
+  display: none !important; 
+  pointer-events: none; 
+}
+
+body.has-expanded-sidebar #logo-wrapper { 
+  pointer-events: none; 
+}
+
+/* Sidebar Animations */
+#sidebar .nav-label { 
+  transition: opacity 0s; 
+}
+
+#sidebar .sidebar-item:hover .nav-label { 
+  transition: opacity 0.3s; 
+}
+
+body.has-expanded-sidebar #sidebar .nav-label { 
+  transition: opacity 0.3s ease 0.15s !important; 
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25em;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s;
+}
+
+.custom-checkbox::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.custom-checkbox:checked {
+  background-color: #FF5E00;
+  border-color: #FF5E00;
+}
+
+.custom-checkbox:checked::before {
+  transform: scale(1);
 }
 
 /* Smooth transitions for interactive elements */
 button,
 input,
-textarea {
+textarea,
+select {
   transition: all 0.2s ease-in-out;
 }
 
 /* Focus styles for accessibility */
 button:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid #4f46e5;
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #FF5E00;
   outline-offset: 2px;
 }
 
@@ -111,34 +223,87 @@ textarea:focus-visible {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Gradient text effect */
-.gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Analysis Steps Timeline Styles */
+.step-timeline-connector {
+  position: absolute;
+  left: 1.25rem;
+  top: 2.5rem;
+  bottom: -0.75rem;
+  width: 2px;
+  background: linear-gradient(to bottom, #e5e7eb 0%, #e5e7eb 100%);
 }
 
-/* Custom badge styles */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1;
+.step-badge {
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Responsive text sizing */
-@media (max-width: 640px) {
-  h1 {
-    font-size: 2rem;
+.step-badge:hover {
+  transform: scale(1.1);
+}
+
+.step-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.step-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Slide down animation for steps */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
   }
-  
-  h2 {
-    font-size: 1.5rem;
+  to {
+    opacity: 1;
+    max-height: 2000px;
+    transform: translateY(0);
   }
+}
+
+.steps-container {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Status indicator pulse */
+@keyframes statusPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.status-success {
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+/* Technical details expand */
+details summary {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+details summary:hover {
+  color: #FF5E00;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Duration badge */
+.duration-badge {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.025em;
 }
 
 /* Print styles */
@@ -149,5 +314,9 @@ textarea:focus-visible {
   
   body {
     background: white;
+  }
+  
+  .step-timeline-connector {
+    background: #000;
   }
 }

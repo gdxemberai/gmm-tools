@@ -8,6 +8,7 @@ from sqlalchemy.ext.asyncio import AsyncEngine
 
 from .database import engine, Base
 from .models.sales_history import SalesHistory
+from .models.purchases import Purchase
 
 
 async def enable_pg_trgm_extension() -> None:

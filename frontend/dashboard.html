@@ -1,0 +1,552 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitigationOS | Cases Dashboard</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #171717;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* Hide scrollbar for main content */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Sidebar Expansion Logic */
+      #sidebar { transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1); }
+      #main-wrapper { transition: padding-left 0.4s cubic-bezier(0.25, 1, 0.5, 1); }
+
+      body.has-expanded-sidebar #sidebar { width: 16rem; }
+      body.has-expanded-sidebar #main-wrapper { padding-left: 16rem; }
+
+      /* Sidebar Items */
+      body.has-expanded-sidebar #sidebar .sidebar-item {
+        justify-content: flex-start !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+
+      body.has-expanded-sidebar #sidebar .nav-label {
+        position: static !important;
+        opacity: 1 !important;
+        background-color: transparent !important;
+        color: inherit !important;
+        box-shadow: none !important;
+        padding: 0 0 0 12px !important;
+        pointer-events: auto !important;
+        display: inline-block !important;
+        white-space: nowrap;
+      }
+
+      /* Sidebar Header */
+      #collapse-trigger { display: none; }
+      #expand-trigger { display: flex; opacity: 0; pointer-events: auto; }
+      #logo-wrapper:hover #expand-trigger { opacity: 1; background-color: rgba(255,255,255,0.95); }
+
+      body.has-expanded-sidebar #sidebar-header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+      }
+      body.has-expanded-sidebar #collapse-trigger { display: block; }
+      body.has-expanded-sidebar #expand-trigger { display: none !important; pointer-events: none; }
+      body.has-expanded-sidebar #logo-wrapper { pointer-events: none; }
+
+      /* Sidebar Animations */
+      #sidebar .nav-label { transition: opacity 0s; }
+      #sidebar .sidebar-item:hover .nav-label { transition: opacity 0.3s; }
+      body.has-expanded-sidebar #sidebar .nav-label { transition: opacity 0.3s ease 0.15s !important; }
+
+      /* Progress Bar Segments */
+      .stage-bar {
+        height: 6px;
+        flex: 1;
+        border-radius: 2px;
+        background-color: #f3f4f6;
+        position: relative;
+        overflow: hidden;
+      }
+      .stage-bar::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-color: currentColor;
+        transform: translateX(-100%);
+        transition: transform 1s ease;
+      }
+      .stage-bar.completed::after { transform: translateX(0); }
+      .stage-bar.active::after { transform: translateX(-30%); opacity: 0.8; }
+      .stage-bar.pending::after { transform: translateX(-100%); }
+
+      /* Custom Checkbox */
+      .custom-checkbox {
+        appearance: none;
+        background-color: #fff;
+        margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 1.15em;
+        height: 1.15em;
+        border: 1px solid #d1d5db;
+        border-radius: 0.25em;
+        display: grid;
+        place-content: center;
+        transition: all 0.2s;
+      }
+      .custom-checkbox::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em white;
+        transform-origin: center;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      }
+      .custom-checkbox:checked {
+        background-color: #FF5E00;
+        border-color: #FF5E00;
+      }
+      .custom-checkbox:checked::before {
+        transform: scale(1);
+      }
+    </style>
+    <script>
+      function toggleSidebar() {
+        document.body.classList.toggle('has-expanded-sidebar');
+      }
+    </script>
+  </head>
+  <body class="min-h-screen overflow-hidden selection:bg-[#FF5E00] selection:text-white relative bg-white text-neutral-900 flex">
+    <!-- Background Animation -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+    </div>
+
+    <!-- Zone 1: Left Sidebar -->
+    <nav class="fixed z-50 flex flex-col bg-white/80 w-[72px] border-neutral-100/80 border-r pt-6 pb-6 top-0 bottom-0 left-0 backdrop-blur-xl justify-between" id="sidebar">
+      <div class="flex flex-col items-center gap-6 w-full">
+        <!-- Sidebar Header -->
+        <div id="sidebar-header" class="flex items-center justify-center w-full px-2 min-h-[40px] relative">
+          <div id="logo-wrapper" class="relative flex items-center justify-center w-10 h-10 shrink-0 rounded-xl cursor-pointer">
+            <div class="text-[#FF5E00]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-fire">
+                <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0a5 5 0 0 1 1-3a1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
+              </svg>
+            </div>
+            <button onclick="toggleSidebar()" id="expand-trigger" class="absolute inset-0 flex items-center justify-center rounded-xl text-neutral-400 transition-all backdrop-blur-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left-open">
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                <path d="M9 3v18"></path>
+                <path d="m14 9 3 3-3 3"></path>
+              </svg>
+            </button>
+          </div>
+          <button id="collapse-trigger" onclick="toggleSidebar()" class="text-neutral-400 hover:text-neutral-600 transition-colors p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+              <path d="M9 3v18"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="w-8 h-[1px] bg-neutral-100"></div>
+
+        <!-- Nav Items -->
+        <div class="flex flex-col gap-2 w-full px-2">
+          <!-- Cases (Active) -->
+          <a href="#" class="sidebar-item group relative flex items-center justify-center p-2.5 rounded-lg text-[#FF5E00] bg-[#FF5E00]/5 transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-5 h-5 stroke-[1.5]">
+              <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span class="nav-label absolute left-14 px-2 py-1 bg-neutral-900 text-white font-normal rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-50 shadow-lg transition-opacity duration-300 text-xs">
+              Cases
+            </span>
+          </a>
+          <!-- Documents -->
+          <a href="#" class="sidebar-item group relative flex items-center justify-center p-2.5 rounded-lg text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50 transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-files w-5 h-5 stroke-[1.5]">
+              <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
+              <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path>
+              <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path>
+            </svg>
+            <span class="nav-label absolute left-14 px-2 py-1 bg-neutral-900 text-white font-normal rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-50 shadow-lg transition-opacity duration-300 text-xs">
+              Documents
+            </span>
+          </a>
+          <!-- Tasks -->
+          <a href="#" class="sidebar-item group relative flex items-center justify-center p-2.5 rounded-lg text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50 transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-square w-5 h-5 stroke-[1.5]">
+              <path d="m9 11 3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+            <span class="nav-label absolute left-14 px-2 py-1 bg-neutral-900 text-white font-normal rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-50 shadow-lg transition-opacity duration-300 text-xs">
+              Tasks
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Actions -->
+      <div class="flex flex-col items-center gap-4 w-full px-2" id="sidebar-bottom-actions">
+        <!-- Settings -->
+        <button class="sidebar-item group relative flex items-center justify-center p-2.5 rounded-lg text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-5 h-5 stroke-[1.5]">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.72l-.15.1a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.72l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span class="nav-label absolute left-14 px-2 py-1 bg-neutral-900 text-white font-normal rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-50 shadow-lg transition-opacity duration-300 text-xs">
+            Settings
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div id="main-wrapper" class="flex flex-col flex-1 pl-[72px] transition-all duration-300 h-screen relative z-10">
+      <!-- Top Bar: Global Search & Status -->
+      <header class="h-16 border-b border-neutral-100 bg-white/80 backdrop-blur-md flex items-center justify-between px-6 lg:px-10 shrink-0 sticky top-0 z-40">
+        <!-- Global Search -->
+        <div class="flex items-center w-full max-w-lg">
+          <div class="relative w-full group">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-neutral-400 group-focus-within:text-[#FF5E00] transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </div>
+            <input type="text" class="block w-full pl-10 pr-3 py-2 border-none bg-neutral-50/50 hover:bg-neutral-50 focus:bg-white text-sm text-neutral-900 rounded-lg focus:ring-1 focus:ring-neutral-200 placeholder-neutral-400 transition-all outline-none" placeholder="Search cases, documents, or dockets...">
+            <div class="absolute inset-y-0 right-2 flex items-center">
+              <kbd class="hidden sm:inline-flex h-5 items-center gap-1 rounded border border-neutral-200 bg-neutral-50 px-1.5 font-mono text-[10px] font-medium text-neutral-500 opacity-100">
+                <span class="text-xs">⌘</span>
+                K
+              </kbd>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Actions: Status & Profile -->
+        <div class="flex items-center gap-6">
+          <!-- System Status -->
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-50 border border-neutral-100">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span class="text-[10px] font-medium text-neutral-600 uppercase tracking-wide">
+              System Operational
+            </span>
+          </div>
+
+          <div class="h-6 w-[1px] bg-neutral-200"></div>
+
+          <!-- User Profile -->
+          <button class="flex items-center gap-3 hover:bg-neutral-50 p-1.5 pl-2 rounded-full transition-all group">
+            <div class="text-right hidden sm:block">
+              <p class="text-xs font-medium text-neutral-900">Alex Counsel</p>
+              <p class="text-[10px] text-neutral-500">Partner</p>
+            </div>
+            <div class="w-8 h-8 rounded-full overflow-hidden ring-2 ring-neutral-100 group-hover:ring-[#FF5E00]/20 transition-all">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="User" class="w-full h-full object-cover">
+            </div>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Workspace -->
+      <main class="flex-1 overflow-y-auto p-6 lg:p-10 no-scrollbar">
+        <!-- Page Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+          <div>
+            <h1 class="text-2xl font-semibold text-neutral-900 tracking-tight">
+              Cases Dashboard
+            </h1>
+            <p class="text-sm text-neutral-500 mt-1">
+              Manage active litigation matters and monitor processing status.
+            </p>
+          </div>
+          <!-- Primary Action -->
+          <button class="group flex items-center gap-2 bg-[#FF5E00] hover:bg-[#FF5E00]/90 text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-all shadow-[0_2px_10px_rgba(255,94,0,0.2)] hover:shadow-[0_4px_16px_rgba(255,94,0,0.3)] hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+              <path d="M5 12h14"></path>
+              <path d="M12 5v14"></path>
+            </svg>
+            <span>New Case</span>
+          </button>
+        </div>
+
+        <!-- Notifications / Summary Area -->
+
+        <!-- Data Grid Container -->
+        <div class="bg-white rounded-xl border border-neutral-200/80 shadow-sm overflow-hidden flex flex-col">
+          <!-- Toolbar -->
+          <div class="px-6 py-4 border-b border-neutral-100 flex items-center justify-between bg-neutral-50/30">
+            <div class="flex items-center gap-3">
+              <button class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-neutral-200 rounded-md text-xs font-medium text-neutral-600 shadow-sm hover:text-neutral-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-filter">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+                Filter
+              </button>
+              <button class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-neutral-200 rounded-md text-xs font-medium text-neutral-600 shadow-sm hover:text-neutral-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-down">
+                  <path d="m21 16-4 4-4-4"></path>
+                  <path d="M17 20V4"></path>
+                  <path d="m3 8 4-4 4 4"></path>
+                  <path d="M7 4v16"></path>
+                </svg>
+                Sort
+              </button>
+            </div>
+            <div class="text-xs text-neutral-500 font-medium">
+              Showing 4 active matters
+            </div>
+          </div>
+
+          <!-- Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-left whitespace-nowrap">
+              <thead>
+                <tr class="bg-neutral-50/50 border-b border-neutral-100">
+                  <th class="py-3 px-6 w-12 text-center">
+                    <input type="checkbox" class="custom-checkbox">
+                  </th>
+                  <th class="py-3 px-6 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    Case Name
+                  </th>
+                  <th class="py-3 px-6 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    Class Period
+                  </th>
+                  <th class="py-3 px-6 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    Jurisdiction
+                  </th>
+
+                  <th class="py-3 px-6 text-xs font-semibold uppercase tracking-wider text-neutral-500 text-right">
+                    Last Updated
+                  </th>
+                  <th class="py-3 px-6 w-12"></th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-neutral-100">
+                <!-- Case 1: Ready -->
+                <tr class="group hover:bg-neutral-50 transition-colors cursor-pointer">
+                  <td class="py-4 px-6 text-center">
+                    <input type="checkbox" class="custom-checkbox">
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex flex-col">
+                      <span class="font-semibold text-neutral-900 text-sm group-hover:text-[#FF5E00] transition-colors">
+                        Argo v. DUAL Commercial
+                      </span>
+                      <span class="text-[11px] text-neutral-400 font-mono mt-0.5">
+                        23-cv-1049
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6">
+                    <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">
+                      Jan 2021 — Present
+                    </span>
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex items-center gap-2">
+                      <span class="px-1.5 py-0.5 border border-neutral-200 rounded text-[10px] font-bold text-neutral-500 bg-white shadow-sm">
+                        SDNY
+                      </span>
+                      <span class="text-xs text-neutral-700">New York</span>
+                    </div>
+                  </td>
+
+                  <td class="py-4 px-6 text-right">
+                    <span class="text-xs text-neutral-500">2 hrs ago</span>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                    <button class="text-neutral-400 hover:text-neutral-600 p-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-more-horizontal">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Case 2: Strategy -->
+                <tr class="group hover:bg-neutral-50 transition-colors cursor-pointer">
+                  <td class="py-4 px-6 text-center">
+                    <input type="checkbox" class="custom-checkbox">
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex flex-col">
+                      <span class="font-semibold text-neutral-900 text-sm group-hover:text-[#FF5E00] transition-colors">
+                        Smith v. Jones Logistics
+                      </span>
+                      <span class="text-[11px] text-neutral-400 font-mono mt-0.5">
+                        2024-CI-0012
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6">
+                    <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">
+                      Mar 2022 — Dec 2023
+                    </span>
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex items-center gap-2">
+                      <span class="px-1.5 py-0.5 border border-neutral-200 rounded text-[10px] font-bold text-neutral-500 bg-white shadow-sm">
+                        TX-W
+                      </span>
+                      <span class="text-xs text-neutral-700">Texas</span>
+                    </div>
+                  </td>
+
+                  <td class="py-4 px-6 text-right">
+                    <span class="text-xs text-neutral-500">Yesterday</span>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                    <button class="text-neutral-400 hover:text-neutral-600 p-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-more-horizontal">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Case 3: Analysis -->
+                <tr class="group hover:bg-neutral-50 transition-colors cursor-pointer">
+                  <td class="py-4 px-6 text-center">
+                    <input type="checkbox" class="custom-checkbox">
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex flex-col">
+                      <span class="font-semibold text-neutral-900 text-sm group-hover:text-[#FF5E00] transition-colors">
+                        Tech Corp v. IP Troll Inc
+                      </span>
+                      <span class="text-[11px] text-neutral-400 font-mono mt-0.5">
+                        5:23-cv-0099
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6">
+                    <span class="text-xs text-neutral-600 bg-neutral-100 px-2 py-1 rounded">
+                      Jun 2019 — Aug 2023
+                    </span>
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex items-center gap-2">
+                      <span class="px-1.5 py-0.5 border border-neutral-200 rounded text-[10px] font-bold text-neutral-500 bg-white shadow-sm">
+                        NDCA
+                      </span>
+                      <span class="text-xs text-neutral-700">California</span>
+                    </div>
+                  </td>
+
+                  <td class="py-4 px-6 text-right">
+                    <span class="text-xs text-neutral-500">3 days ago</span>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                    <button class="text-neutral-400 hover:text-neutral-600 p-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-more-horizontal">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Case 4: Ingestion (Loading) -->
+                <tr class="group hover:bg-neutral-50 transition-colors cursor-pointer">
+                  <td class="py-4 px-6 text-center">
+                    <input type="checkbox" class="custom-checkbox">
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex flex-col">
+                      <span class="font-semibold text-neutral-900 text-sm group-hover:text-[#FF5E00] transition-colors">
+                        Estate of H. Wells
+                      </span>
+                      <span class="text-[11px] text-neutral-400 font-mono mt-0.5">
+                        Probate Ct • P-8821
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6">
+                    <span class="text-xs text-neutral-400 italic">
+                      Not defined
+                    </span>
+                  </td>
+                  <td class="py-4 px-6">
+                    <div class="flex items-center gap-2">
+                      <span class="px-1.5 py-0.5 border border-neutral-200 rounded text-[10px] font-bold text-neutral-500 bg-white shadow-sm">
+                        COOK
+                      </span>
+                      <span class="text-xs text-neutral-700">Illinois</span>
+                    </div>
+                  </td>
+
+                  <td class="py-4 px-6 text-right">
+                    <span class="text-xs text-neutral-500">Just now</span>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                    <button class="text-neutral-400 hover:text-neutral-600 p-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-more-horizontal">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <div class="px-6 py-4 border-t border-neutral-100 flex items-center justify-between bg-neutral-50/30">
+            <button class="text-xs font-medium text-neutral-500 hover:text-neutral-900 disabled:opacity-50">
+              Previous
+            </button>
+            <div class="flex items-center gap-1">
+              <button class="w-7 h-7 flex items-center justify-center rounded-md bg-white border border-neutral-200 text-xs font-medium text-neutral-900 shadow-sm">
+                1
+              </button>
+              <button class="w-7 h-7 flex items-center justify-center rounded-md text-xs font-medium text-neutral-500 hover:bg-neutral-100">
+                2
+              </button>
+              <button class="w-7 h-7 flex items-center justify-center rounded-md text-xs font-medium text-neutral-500 hover:bg-neutral-100">
+                3
+              </button>
+            </div>
+            <button class="text-xs font-medium text-neutral-500 hover:text-neutral-900">
+              Next
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+  
+</body></html>

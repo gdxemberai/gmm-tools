@@ -1,12 +1,13 @@
 """
-Analysis endpoint for Sports Card Arbitrage Tool.
-Orchestrates the complete pipeline: caching, parsing, pricing, and verdict generation.
+Bulk analysis endpoint for Sports Card Arbitrage Tool.
+Processes multiple listings in a single request.
 """
 
 import logging
-from typing import Optional, List
+import asyncio
+from typing import List, Optional
 from datetime import datetime, timezone
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, status
 from pydantic import BaseModel, Field, validator
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -29,7 +30,7 @@ from ..utils.slugify import slugify
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(prefix="/analyze", tags=["Analysis"])
+router = APIRouter(prefix="/analyze", tags=["Bulk Analysis"])
 
 
 class AnalysisStep(BaseModel):
@@ -42,8 +43,8 @@ class AnalysisStep(BaseModel):
     timestamp: str = Field(..., description="ISO 8601 timestamp")
 
 
-class AnalyzeRequest(BaseModel):
-    """Request model for analyze endpoint."""
+class BulkListingItem(BaseModel):
+    """Single listing item for bulk analysis."""
     title: str = Field(..., min_length=1, max_length=500, description="eBay listing title")
     listing_price: float = Field(..., gt=0, description="Current listing price in USD")
     
@@ -55,71 +56,60 @@ class AnalyzeRequest(BaseModel):
         return v.strip()
 
 
-class AnalyzeResponse(BaseModel):
-    """Response model for analyze endpoint."""
-    # Parsed data from OpenAI
-    parsed_data: dict = Field(..., description="Structured card data extracted from title")
-    
-    # Pricing information
-    estimated_value: Optional[float] = Field(None, description="Estimated market value in USD")
-    profit_loss: Optional[float] = Field(None, description="Potential profit (positive) or loss (negative)")
-    verdict: str = Field(..., description="Analysis verdict (GOOD DEAL, OVERPRICED, etc.)")
-    
-    # Match details
-    match_tier: str = Field(..., description="Match tier used (exact, fuzzy, none)")
-    sales_count: int = Field(..., description="Number of comparable sales found")
-    
-    # Metadata
-    cached: bool = Field(False, description="Whether result was retrieved from cache")
-    
-    # Analysis steps
+class BulkAnalyzeRequest(BaseModel):
+    """Request model for bulk analyze endpoint."""
+    listings: List[BulkListingItem] = Field(..., min_items=1, max_items=50, description="List of listings to analyze")
+
+
+class BulkAnalyzeResultItem(BaseModel):
+    """Single result item in bulk analysis response."""
+    index: int = Field(..., description="Index of the listing in the request")
+    title: str = Field(..., description="Original listing title")
+    listing_price: float = Field(..., description="Listing price")
+    success: bool = Field(..., description="Whether analysis succeeded")
+    data: Optional[dict] = Field(None, description="Analysis data if successful")
+    error: Optional[str] = Field(None, description="Error message if failed")
     analysis_steps: List[AnalysisStep] = Field(default_factory=list, description="Detailed analysis pipeline steps")
 
 
-@router.post("", response_model=AnalyzeResponse, status_code=status.HTTP_200_OK)
-async def analyze_listing(
-    request: AnalyzeRequest,
-    db: AsyncSession = Depends(get_db)
-) -> AnalyzeResponse:
+class BulkAnalyzeResponse(BaseModel):
+    """Response model for bulk analyze endpoint."""
+    results: List[BulkAnalyzeResultItem] = Field(..., description="Results for each listing")
+    total: int = Field(..., description="Total number of listings processed")
+    successful: int = Field(..., description="Number of successful analyses")
+    failed: int = Field(..., description="Number of failed analyses")
+
+
+async def analyze_single_listing(
+    index: int,
+    title: str,
+    listing_price: float,
+    db: AsyncSession
+) -> BulkAnalyzeResultItem:
     """
-    Analyze an eBay listing to determine if it's a good deal.
-    
-    Pipeline:
-    1. Check Redis cache for exact title
-    2. If cache miss, parse title with OpenAI
-    3. Slugify parsed fields for database queries
-    4. Query database (Tier 1 exact, fallback to Tier 2 fuzzy)
-    5. Calculate pricing using sanity average algorithm
-    6. Cache result in Redis
-    7. Calculate profit/loss and return verdict
+    Analyze a single listing for bulk processing.
     
     Args:
-        request: Analysis request with title and listing price
-        db: Database session (injected)
+        index: Index of the listing in the batch
+        title: Listing title
+        listing_price: Listing price
+        db: Database session
         
     Returns:
-        AnalyzeResponse: Complete analysis with verdict
-        
-    Raises:
-        HTTPException: If parsing or analysis fails
+        BulkAnalyzeResultItem: Result for this listing
     """
-    logger.info("=" * 60)
-    logger.info("=== ANALYZE LISTING REQUEST RECEIVED ===")
-    logger.info(f"Title: {request.title}")
-    logger.info(f"Listing Price: ${request.listing_price}")
-    logger.info("=" * 60)
+    logger.info(f"[Bulk {index}] Processing: {title}")
     
     analysis_steps: List[AnalysisStep] = []
     step_counter = 1
     
     try:
         # Step A: Check Redis cache
-        cache_key = generate_cache_key("analysis", request.title)
+        cache_key = generate_cache_key("analysis", title)
         cached_result = await get_cached_value(cache_key)
         
         if cached_result:
-            logger.info(f"✓ Cache HIT for title: {request.title}")
-            logger.info(f"Cached data: {cached_result}")
+            logger.info(f"[Bulk {index}] Cache HIT for: {title}")
             
             analysis_steps.append(AnalysisStep(
                 step=step_counter,
@@ -132,7 +122,7 @@ async def analyze_listing(
             
             # Recalculate profit/loss with current listing price
             profit_loss, verdict = await calculate_profit_loss(
-                listing_price=request.listing_price,
+                listing_price=listing_price,
                 estimated_value=cached_result.get("estimated_value")
             )
             
@@ -143,27 +133,32 @@ async def analyze_listing(
                 status="success",
                 details=f"Calculated profit/loss: ${profit_value:.2f}",
                 data={
-                    "listing_price": request.listing_price,
+                    "listing_price": listing_price,
                     "estimated_value": cached_result.get("estimated_value"),
                     "profit_loss": profit_loss
                 },
                 timestamp=datetime.now(timezone.utc).isoformat()
             ))
             
-            logger.info(f"✓ Returning cached result - Verdict: {verdict}, Profit/Loss: ${profit_loss}")
-            
-            return AnalyzeResponse(
-                parsed_data=cached_result["parsed_data"],
-                estimated_value=cached_result["estimated_value"],
-                profit_loss=profit_loss,
-                verdict=verdict,
-                match_tier=cached_result["match_tier"],
-                sales_count=cached_result["sales_count"],
-                cached=True,
+            return BulkAnalyzeResultItem(
+                index=index,
+                title=title,
+                listing_price=listing_price,
+                success=True,
+                data={
+                    "parsed_data": cached_result["parsed_data"],
+                    "estimated_value": cached_result["estimated_value"],
+                    "profit_loss": profit_loss,
+                    "verdict": verdict,
+                    "match_tier": cached_result["match_tier"],
+                    "sales_count": cached_result["sales_count"],
+                    "cached": True
+                },
+                error=None,
                 analysis_steps=analysis_steps
             )
         
-        logger.info(f"✗ Cache MISS for title: {request.title}")
+        logger.info(f"[Bulk {index}] Cache MISS for: {title}")
         
         analysis_steps.append(AnalysisStep(
             step=step_counter,
@@ -175,8 +170,7 @@ async def analyze_listing(
         step_counter += 1
         
         # Step B: Parse title with OpenAI
-        logger.info(f"Parsing listing: {request.title}")
-        parsed_data: ParsedCardData = await parse_listing_title_with_retry(request.title)
+        parsed_data: ParsedCardData = await parse_listing_title_with_retry(title)
         
         analysis_steps.append(AnalysisStep(
             step=step_counter,
@@ -192,8 +186,6 @@ async def analyze_listing(
         player_id = slugify(parsed_data.player_name)
         brand_id = slugify(parsed_data.brand)
         variation_id = slugify(parsed_data.variation or "Base")
-        
-        logger.info(f"Slugified: player={player_id}, brand={brand_id}, variation={variation_id}")
         
         analysis_steps.append(AnalysisStep(
             step=step_counter,
@@ -248,7 +240,7 @@ async def analyze_listing(
             ))
         step_counter += 1
         
-        # Step F: Cache result (without profit/loss as it depends on listing price)
+        # Step F: Cache result
         cache_data = {
             "parsed_data": parsed_data.model_dump(),
             "estimated_value": pricing_result.estimated_value,
@@ -259,7 +251,7 @@ async def analyze_listing(
         
         # Step G: Calculate profit/loss and verdict
         profit_loss, verdict = await calculate_profit_loss(
-            listing_price=request.listing_price,
+            listing_price=listing_price,
             estimated_value=pricing_result.estimated_value
         )
         
@@ -311,53 +303,113 @@ async def analyze_listing(
                 timestamp=datetime.now(timezone.utc).isoformat()
             ))
         
-        logger.info("=" * 60)
-        logger.info(f"✓ ANALYSIS COMPLETE - Verdict: {verdict}")
-        logger.info(f"Estimated Value: ${pricing_result.estimated_value}")
-        logger.info(f"Profit/Loss: ${profit_loss}")
-        logger.info(f"Match Tier: {pricing_result.match_tier}")
-        logger.info(f"Sales Count: {pricing_result.sales_count}")
-        logger.info("=" * 60)
+        logger.info(f"[Bulk {index}] SUCCESS - Verdict: {verdict}")
         
-        response = AnalyzeResponse(
-            parsed_data=parsed_data.model_dump(),
-            estimated_value=pricing_result.estimated_value,
-            profit_loss=profit_loss,
-            verdict=verdict,
-            match_tier=pricing_result.match_tier,
-            sales_count=pricing_result.sales_count,
-            cached=False,
+        return BulkAnalyzeResultItem(
+            index=index,
+            title=title,
+            listing_price=listing_price,
+            success=True,
+            data={
+                "parsed_data": parsed_data.model_dump(),
+                "estimated_value": pricing_result.estimated_value,
+                "profit_loss": profit_loss,
+                "verdict": verdict,
+                "match_tier": pricing_result.match_tier,
+                "sales_count": pricing_result.sales_count,
+                "cached": False
+            },
+            error=None,
             analysis_steps=analysis_steps
         )
         
-        logger.info(f"Response being sent: {response.model_dump()}")
-        return response
-        
-    except ValueError as e:
-        logger.error("=" * 60)
-        logger.error(f"✗ VALIDATION ERROR: {e}")
-        logger.error("=" * 60)
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=f"Invalid request: {str(e)}"
-        )
-    
     except Exception as e:
-        logger.error("=" * 60)
-        logger.error(f"✗ ANALYSIS FAILED: {e}")
-        logger.error("Exception type:", exc_info=True)
-        logger.error("=" * 60)
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Analysis failed: {str(e)}"
+        logger.error(f"[Bulk {index}] FAILED: {str(e)}")
+        
+        # Add error step
+        analysis_steps.append(AnalysisStep(
+            step=step_counter,
+            name="Error",
+            status="error",
+            details=f"Analysis failed: {str(e)}",
+            timestamp=datetime.now(timezone.utc).isoformat()
+        ))
+        
+        return BulkAnalyzeResultItem(
+            index=index,
+            title=title,
+            listing_price=listing_price,
+            success=False,
+            data=None,
+            error=str(e),
+            analysis_steps=analysis_steps
         )
 
 
-@router.get("/health", status_code=status.HTTP_200_OK)
-async def analyze_health():
-    """Health check endpoint for analysis service."""
+@router.post("/bulk", response_model=BulkAnalyzeResponse, status_code=status.HTTP_200_OK)
+async def analyze_bulk_listings(
+    request: BulkAnalyzeRequest,
+    db: AsyncSession = Depends(get_db)
+) -> BulkAnalyzeResponse:
+    """
+    Analyze multiple eBay listings in a single request.
+    
+    Processes each listing through the same pipeline as single analysis:
+    1. Check Redis cache
+    2. Parse title with OpenAI (if cache miss)
+    3. Query database for pricing
+    4. Calculate profit/loss and verdict
+    
+    Individual failures are handled gracefully - if one listing fails,
+    others will still be processed.
+    
+    Args:
+        request: Bulk analysis request with list of listings
+        db: Database session (injected)
+        
+    Returns:
+        BulkAnalyzeResponse: Results for all listings with summary stats
+    """
+    logger.info("=" * 60)
+    logger.info("=== BULK ANALYZE REQUEST RECEIVED ===")
+    logger.info(f"Total Listings: {len(request.listings)}")
+    logger.info("=" * 60)
+    
+    # Process all listings concurrently
+    tasks = [
+        analyze_single_listing(
+            index=idx,
+            title=listing.title,
+            listing_price=listing.listing_price,
+            db=db
+        )
+        for idx, listing in enumerate(request.listings)
+    ]
+    
+    results = await asyncio.gather(*tasks)
+    
+    # Calculate summary statistics
+    successful = sum(1 for r in results if r.success)
+    failed = sum(1 for r in results if not r.success)
+    
+    logger.info("=" * 60)
+    logger.info(f"✓ BULK ANALYSIS COMPLETE")
+    logger.info(f"Total: {len(results)}, Successful: {successful}, Failed: {failed}")
+    logger.info("=" * 60)
+    
+    return BulkAnalyzeResponse(
+        results=results,
+        total=len(results),
+        successful=successful,
+        failed=failed
+    )
+
+
+@router.get("/bulk/health", status_code=status.HTTP_200_OK)
+async def bulk_analyze_health():
+    """Health check endpoint for bulk analysis service."""
     return {
         "status": "healthy",
-        "service": "analysis",
-        "message": "Analysis service is operational"
+        "service": "bulk_analysis",
+        "message": "Bulk analysis service is operational"
     }

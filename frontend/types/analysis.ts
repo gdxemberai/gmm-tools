@@ -3,6 +3,15 @@
  * Matches backend Pydantic models
  */
 
+export interface AnalysisStep {
+  step: number;
+  name: string;
+  status: string;
+  details: string;
+  data?: Record<string, any>;
+  timestamp: string;
+}
+
 export interface ParsedCardData {
   player_name: string;
   year: number | null;
@@ -45,8 +54,36 @@ export interface AnalyzeResponse {
   match_tier: string;
   sales_count: number;
   cached: boolean;
+  analysis_steps: AnalysisStep[];
 }
 
 export interface ApiError {
   detail: string;
+}
+
+// Bulk Analysis Types
+export interface BulkListingItem {
+  title: string;
+  listing_price: number;
+}
+
+export interface BulkAnalyzeRequest {
+  listings: BulkListingItem[];
+}
+
+export interface BulkAnalyzeResultItem {
+  index: number;
+  title: string;
+  listing_price: number;
+  success: boolean;
+  data: AnalyzeResponse | null;
+  error: string | null;
+  analysis_steps: AnalysisStep[];
+}
+
+export interface BulkAnalyzeResponse {
+  results: BulkAnalyzeResultItem[];
+  total: number;
+  successful: number;
+  failed: number;
 }
