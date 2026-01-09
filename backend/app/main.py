@@ -4,10 +4,11 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import health, analyze, bulk_analyze, database, cache, purchases
+from app.api import health, analyze, bulk_analyze, database, cache, purchases, ebay
 from app.database import init_db, close_db
 from app.redis_client import init_redis, close_redis
 from app.services.openai_service import init_openai
+from app.services.ebay_service import close_ebay_service
 
 # Configure logging
 logging.basicConfig(
@@ -52,6 +53,7 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down Sports Card Arbitrage Tool API...")
     
     try:
+        await close_ebay_service()
         await close_redis()
         await close_db()
         logger.info("✓ All services shut down successfully")
@@ -93,6 +95,7 @@ app.include_router(bulk_analyze.router)
 app.include_router(database.router)
 app.include_router(cache.router)
 app.include_router(purchases.router)
+app.include_router(ebay.router)
 
 
 @app.get("/")

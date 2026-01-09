@@ -13,6 +13,10 @@ import {
   SalesHistoryResponse,
   SalesHistoryFilters
 } from "@/types/database";
+import {
+  EbaySearchResponse,
+  EbaySearchRequest
+} from "@/types/ebay";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -582,6 +586,71 @@ export async function getPurchases(skip: number = 0, limit: number = 100): Promi
     console.error("Error Message:", error instanceof Error ? error.message : String(error));
     console.error("==========================");
     
+    if (error instanceof ApiRequestError) {
+      throw error;
+    }
+
+    if (error instanceof TypeError) {
+      throw new ApiRequestError(
+        "Network error - unable to connect to backend",
+        undefined,
+        "Make sure the backend server is running at " + API_BASE_URL
+      );
+    }
+
+    throw new ApiRequestError(
+      "An unexpected error occurred",
+      undefined,
+      error instanceof Error ? error.message : String(error)
+    );
+  }
+}
+
+/**
+ * Search eBay for sports card listings
+ *
+ * @param query - Search query string
+ * @param limit - Number of results to return (default 50)
+ * @returns eBay search results
+ * @throws ApiRequestError if the request fails
+ */
+export async function searchEbay(
+  query: string,
+  limit: number = 50
+): Promise<EbaySearchResponse> {
+  const params = new URLSearchParams();
+  params.append('q', query);
+  params.append('limit', limit.toString());
+  
+  const url = `${API_BASE_URL}/ebay/search?${params.toString()}`;
+  
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      let errorDetail = `Request failed with status ${response.status}`;
+      try {
+        const errorData: ApiError = await response.json();
+        errorDetail = errorData.detail || errorDetail;
+      } catch (parseError) {
+        errorDetail = response.statusText || errorDetail;
+      }
+
+      throw new ApiRequestError(
+        "Failed to search eBay",
+        response.status,
+        errorDetail
+      );
+    }
+
+    const data: EbaySearchResponse = await response.json();
+    return data;
+  } catch (error) {
     if (error instanceof ApiRequestError) {
       throw error;
     }

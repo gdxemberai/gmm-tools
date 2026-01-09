@@ -139,6 +139,21 @@ export default function RootLayout({
                   Sales Database
                 </span>
               </Link>
+
+              {/* eBay Search */}
+              <Link href="/ebay" className={`sidebar-item group relative flex items-center justify-center p-2.5 rounded-lg transition-all ${
+                isActive('/ebay')
+                  ? 'text-[#FF5E00] bg-[#FF5E00]/5'
+                  : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'
+              }`}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 stroke-[1.5]">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <span className="nav-label absolute left-14 px-2 py-1 bg-neutral-900 text-white font-normal rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-50 shadow-lg transition-opacity duration-300 text-xs">
+                  eBay Search
+                </span>
+              </Link>
             </div>
           </div>
 

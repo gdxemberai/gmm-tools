@@ -143,7 +143,7 @@ async def parse_listing_title(title: str) -> ParsedCardData:
         
         # Call OpenAI API
         response = await client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-mini",
             messages=[
                 {
                     "role": "system",
@@ -154,8 +154,8 @@ async def parse_listing_title(title: str) -> ParsedCardData:
                     "content": full_prompt
                 }
             ],
-            temperature=0.1,  # Low temperature for consistent parsing
-            max_tokens=1000,
+            # temperature=0.1,  # Low temperature for consistent parsing
+            max_completion_tokens=1000,
             response_format={"type": "json_object"}  # Ensure JSON response
         )
         
